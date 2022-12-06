@@ -1,6 +1,6 @@
 # `@streampay/checkout-sdk`
 
-StreamPay Checkout eCommerce SDK lets you effortlessly create NFT minting functions for Candy Machine v2 collections. Simulate minting transactions for multiple use-cases like NFT collection launch, gasless mint and many more on Solana Blockchain!
+StreamPay Checkout commerce SDK lets you effortlessly create NFT minting functions for Candy Machine v2 collections. Simulate minting transactions for multiple use-cases like NFT collection launch, gasless mint and many more on Solana Blockchain!
 
 ## Installation
 
