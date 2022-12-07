@@ -1,6 +1,6 @@
 # `@streampay/checkout-sdk`
 
-StreamPay Checkout commerce SDK lets you effortlessly create NFT minting functions for Candy Machine v2 collections. Simulate minting transactions for multiple use-cases like NFT collection launch, gasless mint and many more on Solana Blockchain!
+StreamPay SDK lets you effortlessly create NFT minting functions for Candy Machine v2 collections. Simulate minting transactions for multiple use-cases like NFT collection launch, gasless mint and many more on Solana Blockchain!
 
 ## Installation
 
@@ -58,6 +58,7 @@ const sdk = new StreamPay();
 const connection = new anchor.web3.Connection(
   "https://metaplex.devnet.rpcpool.com"
 );
+
 const CANDY_MACHINE_ID = new anchor.web3.PublicKey(
   "GrVSy3ZRbuw5ACbwSEMsj9gULk9MW7QPK1TUYcP6nLM"
 );
@@ -122,7 +123,7 @@ const PAYER = anchor.web3.Keypair.fromSecretKey(
   base58.decode(process.env.PAYER_SECRET_KEY!)
 );
 const USER = new anchor.web3.PublicKey(
-  "F7rscaWw3CS8T2ATEZ3pgrRHAWJV8XpGPtqvLeomW743"
+  "8k1JM5Cd6Hz7G6Jsq1FSzgRYPyS4RFj9k11Uvt5bgWRP"
 );
 
 const { transaction, mint } = await sdk.candyMachine.gasless({
@@ -175,14 +176,14 @@ import base58 from "bs58";
 
 dotenv.config();
 
+const sdk = new StreamPay();
+
 const PAYER = anchor.web3.Keypair.fromSecretKey(
   base58.decode(process.env.PAYER_SECRET_KEY!)
 );
 const USER = new anchor.web3.PublicKey(
-  "F7rscaWw3CS8T2ATEZ3pgrRHAWJV8XpGPtqvLeomW743"
+  "8k1JM5Cd6Hz7G6Jsq1FSzgRYPyS4RFj9k11Uvt5bgWRP"
 );
-
-const sdk = new StreamPay();
 
 const { signature } = await sdk.nft.airdrop({
   metadata: {
@@ -224,6 +225,6 @@ module.exports = {
 
 ## Get in Touch
 
-- Twitter: [@stream_protocol](https://twitter.com/stream_payments)
-- Discord: [Join Now](https://discord.com/invite/) Coming Soon!
+- Twitter: [@streampayfun](https://twitter.com/streampayfun)
+- Discord: [Join Now](https://discord.com/invite/VGjPXWUHGT)
 - Email: [contact@streamprotocol.org](mailto:contact@streamprotocol.org)
